@@ -1,0 +1,32 @@
+{
+  "script": [
+    {
+      "name": "manhuaren.manhuaren",
+      "code": "function after(hook, param)\n    local fake = luajava.bindClass('java.util.Locale')\n    param:setResult(fake.ENGLISH)\n    return true\nend\n"
+    }
+  ],
+  "definition": [
+    {
+      "builtin": false,
+      "collection": "manhuaren",
+      "group": "manhuaren",
+      "name": "manhuaren",
+      "author": "fenghengzhi",
+      "version": 0,
+      "description": "",
+      "className": "java.util.Locale",
+      "methodName": "getDefault",
+      "parameterTypes": [],
+      "returnType": "java.util.Locale",
+      "minSdk": 1,
+      "maxSdk": 999,
+      "minApk": 0,
+      "maxApk": 2147483647,
+      "enabled": true,
+      "optional": false,
+      "usage": true,
+      "notify": false,
+      "luaScript": "@manhuaren.manhuaren"
+    }
+  ]
+}
